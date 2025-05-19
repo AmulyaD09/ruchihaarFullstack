@@ -1,0 +1,8 @@
+.header {
+    height: 39vw;
+    width: 100%;
+    margin: 30px auto;
+    background: url('../../assets/header_img.png') no-repeat center center;
+    background-size:contain;
+    border-radius: 20px;
+}
