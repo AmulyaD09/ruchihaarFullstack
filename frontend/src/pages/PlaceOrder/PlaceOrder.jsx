@@ -21,8 +21,8 @@ const PlaceOrder = () => {
         phone: ""
     })
 
-    const { getTotalCartAmount, token, food_list, cartItems, url, setCartItems,currency,deliveryCharge } = useContext(StoreContext);
-
+    const { getTotalCartAmount, token, food_list, cartItems, setCartItems,currency,deliveryCharge } = useContext(StoreContext);
+    const url = import.meta.env.VITE_API_URL;
     const navigate = useNavigate();
 
     const onChangeHandler = (event) => {

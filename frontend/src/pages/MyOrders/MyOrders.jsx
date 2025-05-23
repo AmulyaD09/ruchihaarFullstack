@@ -7,7 +7,8 @@ import { assets } from '../../assets/assets';
 const MyOrders = () => {
   
   const [data,setData] =  useState([]);
-  const {url,token,currency} = useContext(StoreContext);
+  const url = import.meta.env.VITE_API_URL;
+  const {token,currency} = useContext(StoreContext);
 
   const fetchOrders = async () => {
     const response = await axios.post(url+"/api/order/userorders",{},{headers:{token}});

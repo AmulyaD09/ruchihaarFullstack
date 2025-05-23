@@ -5,7 +5,8 @@ import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
 
-  const {cartItems, food_list, removeFromCart,getTotalCartAmount,url,currency,deliveryCharge} = useContext(StoreContext);
+  const url = import.meta.env.VITE_API_URL;
+  const {cartItems, food_list, removeFromCart,getTotalCartAmount,currency,deliveryCharge} = useContext(StoreContext);
   const navigate = useNavigate();
 
   return (
